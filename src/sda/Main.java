@@ -24,7 +24,7 @@ public class Main {
 
 		int bestScore = 0;
 
-		for (int i=0; i<5;i++)
+		for (int i=0; i<resultArray.length;i++)
 		{
 			int newScore = resultArray[i].score;
 			if (newScore>bestScore) {
@@ -37,7 +37,7 @@ public class Main {
 
 		int bestStudentId =0;
 
-		for (int i=0;i<5;i++) {
+		for (int i=0;i<resultArray.length;i++) {
 			if (resultArray[i].score == bestScore)
 			{
 				bestStudentId=resultArray[i].studentId;
@@ -48,7 +48,7 @@ public class Main {
 
 		String topStudentName = " ";
 
-		for (int i=0;i<5;i++) {
+		for (int i=0;i<studentArray.length;i++) {
 			if (studentArray[i].studentId == bestStudentId)
 			{
 				topStudentName = studentArray[i].name;
